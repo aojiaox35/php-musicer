@@ -1,0 +1,18 @@
+如果你需要从数据库中获取歌曲列表，可以使用 PHP 来动态生成歌曲列表。你可以创建一个 songs.php 文件，返回 JSON 格式的歌曲数据：
+
+fetch('songs.php')
+    .then(response => response.json())
+    .then(data => {
+        songs = data;
+        loadSong(songs[songIndex]);
+    });
+
+
+然后在 JavaScript 中通过 AJAX 请求获取歌曲列表：
+
+fetch('songs.php')
+    .then(response => response.json())
+    .then(data => {
+        songs = data;
+        loadSong(songs[songIndex]);
+    });
