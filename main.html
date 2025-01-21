@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炫酷音乐播放器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="song-info">
+            <img src="cover.jpg" alt="专辑封面" id="cover">
+            <h2 id="song-title">歌曲标题</h2>
+            <h3 id="artist">艺术家</h3>
+        </div>
+        <div class="controls">
+            <button id="prev">上一首</button>
+            <button id="play">播放</button>
+            <button id="next">下一首</button>
+        </div>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+        <audio id="audio" src="song.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
